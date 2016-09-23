@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Noticies Actuals{% endblock title %}
+
+{% block content %}
+<h1>Llistat de noticies</h1>
+{%  for noticia in noticies %}
+	<div id="bloc">
+		<h2>{{ noticia.nom_post }}</h2>
+		<p>{{ noticia.descr_post }}</p>
+	</div>
+{%  endfor %}
+{% endblock content %}
